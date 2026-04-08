@@ -1,0 +1,51 @@
+{
+  "name": "claude-cli-monitor",
+  "version": "0.0.6",
+  "description": "Analyze Claude Code subagent token usage from transcript JSONL",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claude-cli-monitor": "dist/cli.js",
+    "claude-cli-monitor-hook": "dist/hook-entry.js",
+    "claude-cli-monitor-statusline": "dist/statusline-entry.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --test test/*.test.js",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "claude-code",
+    "agent",
+    "monitor",
+    "token",
+    "subagent",
+    "transcript",
+    "cli"
+  ],
+  "author": "nullnull-kim",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullnull-kim/claude-cli-monitor.git"
+  },
+  "homepage": "https://github.com/nullnull-kim/claude-cli-monitor#readme",
+  "bugs": {
+    "url": "https://github.com/nullnull-kim/claude-cli-monitor/issues"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "prepublishOnly": "npm run build && npm test",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Internal development files
+sessions/
+tasks/
+reports/
+images/
+
+# Demo (local only)
+demos/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+._*
+*.stackdump
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# npm artifacts
+*.tgz
+.npm/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+
+# Claude Code runtime / local files
+.claude/settings.json
+.claude/settings.local.json
+.claude/.current-session
+.claude/.heartbeat*
+.claude/.discord-webhook
+.claude/.budget-state.json
+.claude/logs/
+.claude/.continuity-state.json
+.claude/.memory-candidates.json
+.claude/.stop-hook-debug.log
+.claude/.tldr-session-reads.json
+.claude/.tldr/
+.claude/hooks/
+.claude/skills/*
+!.claude/skills/start-task/
+!.claude/skills/start-task/**
+!.claude/skills/complete-task/
+!.claude/skills/complete-task/**
+!.claude/skills/release-check/
+!.claude/skills/release-check/**
+!.claude/skills/audit-code/
+!.claude/skills/audit-code/**
+!.claude/skills/auto-refactor/
+!.claude/skills/auto-refactor/**
+.tldr/
+
+# Korean study / reference mirror (read-by-human only, never read by agents)
+study/
